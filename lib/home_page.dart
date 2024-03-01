@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_task_evg_flutter/page2.dart';
 import 'style.dart';
 
 class HomePage extends StatefulWidget {
@@ -23,7 +24,11 @@ class _HomePageState extends State<HomePage> {
                         borderRadius: BorderRadius.circular(5)),
                     backgroundColor: Colors.purple,
                     fixedSize: const Size(250, 40)),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context, MaterialPageRoute(
+                      builder: (context)=> Page2()));
+                },
                 child: const Text('Регистрация', style: AppTextStyle.style2)),
             const SizedBox(height: 8),
             ElevatedButton(
@@ -58,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(5)),
                       ),
                       onPressed: () {},
-                      child: Image.asset('/ic1.png'),
+                      child: Image.asset('/icon1.png'),
                     ),
                     const SizedBox(width: 30),
                     ElevatedButton(
@@ -68,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(5)),
                       ),
                       onPressed: () {},
-                      child: Image.asset('/ic2.png'),
+                      child: Image.asset('/icon2.png'),
                     ),
                     const SizedBox(width: 30),
                     ElevatedButton(
@@ -78,7 +83,7 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(5)),
                       ),
                       onPressed: () {},
-                      child: Image.asset('/ic3.png'),
+                      child: Image.asset('/icon3.png'),
                     ),
                     const SizedBox(width: 30),
                     ElevatedButton(
@@ -88,7 +93,7 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(5)),
                       ),
                       onPressed: () {},
-                      child: Image.asset('/ic4.png'),
+                      child: Image.asset('/icon4.png'),
                     ),
                   ],
                 ),
