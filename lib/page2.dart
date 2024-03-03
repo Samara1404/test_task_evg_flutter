@@ -15,11 +15,11 @@ class _Page2State extends State<Page2> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        leading: Icon(Icons.arrow_back_ios_new_outlined),
-        title: Center(child: Text('Регистрация', style: AppTextStyle.style1)),
-        actions: [
+        leading: const Icon(Icons.arrow_back_ios_new_outlined),
+        title: const Center(child: Text('Регистрация', style: AppTextStyle.style1)),
+        actions: const [
           Padding(
-            padding: const EdgeInsets.all(20),
+            padding: EdgeInsets.all(20),
             child: Text('Войти', style: AppTextStyle.style4),
           ),
         ],
@@ -30,49 +30,54 @@ class _Page2State extends State<Page2> {
           children: [
             TextFormField(
               decoration: InputDecoration(
-                  hintText: 'Имя',
+                labelText: 'Имя',
+                  hintText: 'Алексей',
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15))),
             ),
-            SizedBox(height: 12),
+            const SizedBox(height: 12),
             TextFormField(
               decoration: InputDecoration(
-                  hintText: 'Фамилия',
+                labelText: "Фамилия",
+                  hintText: 'Алексеев',
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15))),
             ),
-            SizedBox(height: 12),
+            const SizedBox(height: 12),
             TextFormField(
               decoration: InputDecoration(
-                  hintText: 'Почта',
+                labelText: 'Почта',
+                  hintText: 'aleksei@mail.ru',
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15))),
             ),
-            SizedBox(height: 12),
+            const SizedBox(height: 12),
             TextFormField(
               decoration: InputDecoration(
-                  hintText: 'Пароль',
+                labelText: 'Пароль',
+                  hintText: '******',
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15))),
             ),
-            SizedBox(height: 12),
+            const SizedBox(height: 12),
             TextFormField(
               decoration: InputDecoration(
-                  hintText: 'Повторите пароль',
+                labelText: 'Повторите пароль',
+                  hintText: '******',
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15))),
             ),
-            SizedBox(height: 25),
+            const SizedBox(height: 25),
             ElevatedButton(
                style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5)),
-                    backgroundColor: Colors.grey,
+                    backgroundColor: Colors.purple,
                     fixedSize: const Size(250, 40)),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
-                  builder:(context)=> Page3()));
-              }, child: Text('Зарегистрироваться', style: AppTextStyle.style2)),
+                  builder:(context)=> const Page3()));
+              }, child: const Text('Зарегистрироваться', style: AppTextStyle.style2)),
           ],
          
         ),

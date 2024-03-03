@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   Navigator.push(
                     context, MaterialPageRoute(
-                      builder: (context)=> Page2()));
+                      builder: (context)=> const Page2()));
                 },
                 child: const Text('Регистрация', style: AppTextStyle.style2)),
             const SizedBox(height: 8),
